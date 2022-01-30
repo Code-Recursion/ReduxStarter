@@ -23,16 +23,39 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.list > ul {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.listItem {
+  margin: 4px;
+  width: 8rem;
+  list-style-type: none;
+  border: 1px dashed rgb(204, 75, 0);
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.delete {
+  background: #0c0b0b;
+  /* border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px; */
+  height: 30px;
+  position: relative;
+  left: 5rem;
+  border: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.listItem:hover .delete {
+  transform: translateX(-2.6rem);
+}
+
+svg {
+  fill: rgb(255, 255, 255);
 }
